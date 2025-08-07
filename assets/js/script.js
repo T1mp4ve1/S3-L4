@@ -1,27 +1,35 @@
 const tabellone = document.getElementById("tabellone");
 const numeroEstratto = document.getElementById("numeroEstratto");
 const estraiBtn = document.getElementById("estraiBtn");
+const numeroEstrattoSpan = document.getElementById("numeroEstrattoSpan");
 
-const celle = [];
 const numeriDisponibili = Array.from({ length: 90 }, (_, i) => i + 1);
+const celleArray = [];
 
 for (let i = 1; i <= 90; i++) {
-  const cella = document.createElement("div");
-  cella.classList.add("cella");
-  cella.textContent = i;
-  tabellone.appendChild(cella);
-  celle[i] = cella;
+  const cellaDiv = document.createElement("div");
+  tabellone.appendChild(cellaDiv);
+
+  const cellaNum = document.createElement("h4");
+  cellaDiv.appendChild(cellaNum);
+  cellaNum.innerText = i;
+
+  celleArray[i] = cellaNum;
+  console.log(celleArray);
 }
 
 estraiBtn.addEventListener("click", () => {
   if (numeriDisponibili.length === 0) {
     numeroEstratto.textContent = "Tutti i numeri sono stati estratti!";
     return;
-  };
+  }
 
   const randomNum = Math.floor(Math.random() * numeriDisponibili.length);
+  console.log(randomNum);
   const numero = numeriDisponibili.splice(randomNum, 1);
+  console.log(numero);
+  console.log(numeriDisponibili);
 
-  numeroEstratto.textContent = `Numero estratto: ${numero}`;
-  celle[numero].classList.add("estratta");
+  numeroEstrattoSpan.innerText = numero;
+  celleArray[numero].classList.toggle("estratta");
 });

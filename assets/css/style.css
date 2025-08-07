@@ -1,8 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+HU:wght@100..400&display=swap');
+/* GENERAL */
 
 body {
+    height: 100vh;
     text-align: center;
     font-family: "Libertinus Sans", sans-serif;
+    background-color: rgb(185, 171, 171);
+}
+
+#body_div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1% 2%;
+}
+
+/* CELLE */
+
+h4 {
+    margin: 0;
+    padding: 10px;
+    background-color: #ccecc8;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.estratta {
+    background-color: #f1f1f1;
+    color: rgb(180, 180, 180);
 }
 
 #tabellone {
@@ -11,38 +39,38 @@ body {
     gap: 5px;
     max-width: 500px;
     margin: 20px auto;
-    
+
 }
 
-.cella {
-    padding: 10px;
-    background-color: #ccecc8;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    box-shadow: 0px 5px 5px #888888;
-}
-
-.estratta {
-    background-color: #f1f1f1;
-    color: rgb(180, 180, 180);
-    box-shadow: 0px 0px 0px #ffffff;
-}
+/* ESTRAZIONE */
 
 #estraiBtn {
-    background-color: #85af85;
+    font-family: "Libertinus Sans", sans-serif;
+    background-color: rgb(128, 114, 114);
     color: white;
-    display: block;
     border-radius: 10px;
     border: 0;
     margin: auto;
     padding: 10px 20px;
     font-size: 1.2rem;
     cursor: pointer;
-    box-shadow: 0px 5px 5px #888888;
+    box-shadow: 0px 10px 10px #0000002f;
 }
 
 #numeroEstratto {
-    text-align: center;
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+#numeroEstrattoSpan {
+    position: absolute;
+    top: 95%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 4%;
+    background-color: #f57b6b;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
 }
