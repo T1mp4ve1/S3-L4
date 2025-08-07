@@ -20,7 +20,7 @@ estraiBtn.addEventListener("click", () => {
   };
 
   const randomNum = Math.floor(Math.random() * numeriDisponibili.length);
-  const numero = numeriDisponibili.splice(randomNum, 1)[0];
+  const numero = numeriDisponibili.splice(randomNum, 1);
 
   numeroEstratto.textContent = `Numero estratto: ${numero}`;
   celle[numero].classList.add("estratta");
