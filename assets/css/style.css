@@ -1,0 +1,42 @@
+#tabellone {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.cella {
+    padding: 10px;
+    text-align: center;
+    background-color: #e1e1e1;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.estratta {
+    background-color: #597d59;
+    color: white;
+}
+
+#estraiBtn {
+    background-color: #597d59;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    border: 0;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#numeroEstratto {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}
