@@ -1,26 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+HU:wght@100..400&display=swap');
+
+body {
+    text-align: center;
+    font-family: "Libertinus Sans", sans-serif;
+}
+
 #tabellone {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 5px;
     max-width: 500px;
     margin: 20px auto;
+    
 }
 
 .cella {
     padding: 10px;
-    text-align: center;
-    background-color: #e1e1e1;
+    background-color: #ccecc8;
     font-size: 1.5rem;
     border-radius: 50%;
+    box-shadow: 0px 5px 5px #888888;
 }
 
 .estratta {
-    background-color: #597d59;
-    color: white;
+    background-color: #f1f1f1;
+    color: rgb(180, 180, 180);
+    box-shadow: 0px 0px 0px #ffffff;
 }
 
 #estraiBtn {
-    background-color: #597d59;
+    background-color: #85af85;
     color: white;
     display: block;
     border-radius: 10px;
@@ -29,14 +38,11 @@
     padding: 10px 20px;
     font-size: 1.2rem;
     cursor: pointer;
+    box-shadow: 0px 5px 5px #888888;
 }
 
 #numeroEstratto {
     text-align: center;
     font-size: 1.5rem;
     margin-top: 10px;
-}
-
-h2 {
-    text-align: center;
 }
