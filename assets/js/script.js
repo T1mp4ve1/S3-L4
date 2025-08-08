@@ -15,20 +15,20 @@ for (let i = 1; i <= 90; i++) {
   cellaNum.innerText = i;
 
   celleArray[i] = cellaNum;
-  console.log(celleArray);
-}
+  // console.log(celleArray);
+};
 
 estraiBtn.addEventListener("click", () => {
   if (numeriDisponibili.length === 0) {
     numeroEstratto.textContent = "Tutti i numeri sono stati estratti!";
     return;
-  }
+  };
 
   const randomNum = Math.floor(Math.random() * numeriDisponibili.length);
-  console.log(randomNum);
+  // console.log(randomNum);
   const numero = numeriDisponibili.splice(randomNum, 1);
-  console.log(numero);
-  console.log(numeriDisponibili);
+  // console.log(numero);
+  // console.log(numeriDisponibili);
 
   numeroEstrattoSpan.innerText = numero;
   celleArray[numero].classList.toggle("estratta");
